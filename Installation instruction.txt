@@ -1,0 +1,39 @@
+   58  yum update
+   59  getenforce
+   60  chkconfig iptables off
+   61  init 6
+   62  ll
+   63  rm samba-latest.tar.gz
+   64  history
+   65  wget http://ftp.samba.org/pub/samba/samba-latest.tar.gz
+   66  tar -xzvf samba-latest.tar.gz
+   67  cd samba-latest/
+   68  cd samba-4.3.3/
+   69  ./configure --enable-selftest
+   70  yum install perl
+   71  make && make instal
+   72  ./configure --enable-selftest
+   73  yum install perl libldap2-dev openldap-devel
+   74  ./configure --enable-selftest
+   75  make && make instal
+   76  make instal
+   77  yum install gcc
+   78  make install
+   79  /usr/local/samba/bin/samba-tool domain provision --realm=opentodo.net --domain=OPENTODO --adminpass 'abhiraw1234' --server-role=dc --dns-backend=BIND9_DLZ
+   80  /usr/local/samba/bin/samba-tool domain provision --realm=opentodo.net --domain=OPENTODO --adminpass 'abhi#RAW1234' --server-role=dc --dns-backend=BIND9_DLZ
+   81  rndc-confgen -a -r /dev/urandom
+   82  vi /etc/named.conf
+   83  vi /etc/resolv.conf
+   84  chattr -i /etc/resolv.conf
+   85  vi /etc/resolv.conf
+   86  vi /etc/krb5.conf
+   87  chown named:named /usr/local/samba/private/dns
+   88  chown named:named /usr/local/samba/private/dns.keytab
+   89  chmod 775 /usr/local/samba/private/dns
+   90  vi /etc/init.d/samba4
+   91  chmod 755 /etc/init.d/samba4
+   92  /etc/init.d/named start
+   93  /etc/init.d/samba4 start
+   94  chkconfig --levels 235 samba4 on
+   95  chkconfig --levels 235 named on
+

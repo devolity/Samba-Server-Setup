@@ -1,0 +1,6 @@
+/* this file is auto-generated - do not edit */
+update-policy {
+	grant GDGPSD.IN ms-self * A AAAA;
+	grant Administrator@GDGPSD.IN wildcard * A AAAA SRV CNAME;
+	grant PDC$@gdgpsd.in wildcard * A AAAA SRV CNAME;
+};

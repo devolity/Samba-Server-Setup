@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Drives clsid="{8FDDCC1A-0C3C-43cd-A6B4-71A6DF20DA8C}"><Drive clsid="{935D1B74-9CB8-4e3c-9914-7DD559B7A417}" name="H:" status="H:" image="0" changed="2015-07-01 05:14:32" uid="{B7449AD9-D98C-474B-9A25-21692516D69D}"><Properties action="C" thisDrive="NOCHANGE" allDrives="NOCHANGE" userName="" path="\\pdc\Image_and_repos" label="" persistent="1" useLetter="1" letter="H"/></Drive>
+	<Drive clsid="{935D1B74-9CB8-4e3c-9914-7DD559B7A417}" name="I:" status="I:" image="0" changed="2015-07-01 05:15:09" uid="{ADE8584A-19FC-495B-B191-CB568F6856AD}"><Properties action="C" thisDrive="NOCHANGE" allDrives="NOCHANGE" userName="" path="\\pdc\universal_share" label="" persistent="1" useLetter="1" letter="I"/></Drive>
+	<Drive clsid="{935D1B74-9CB8-4e3c-9914-7DD559B7A417}" name="J:" status="J:" image="0" changed="2015-07-01 05:16:19" uid="{A4DB98C0-D9C2-4870-AAFD-DC714A7440B7}"><Properties action="C" thisDrive="NOCHANGE" allDrives="NOCHANGE" userName="" path="\\pdc\sec" label="" persistent="1" useLetter="1" letter="J"/></Drive>
+</Drives>

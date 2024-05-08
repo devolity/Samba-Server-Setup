@@ -1,0 +1,125 @@
+==========================Testing your Samba Domain Controller  ====================================
+
+# /usr/local/samba/sbin/samba -V
+
+# /usr/local/samba/bin/smbclient --version
+
+
+$$$$$$$$$$$$$$$$$$  Testing your Samba Domain Controller  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+$ Note: If you are running any "smbd", "nmbd" or "winbindd" processes from previous installations, they need to be stopped before starting "samba" from your new DC installation!
+
+$ To start the Samba Active Directory Domain Controller in "standard" mode, which is suitable for production use, run
+
+-----------
+# samba
+-----------
+
+$ Samba doesn't yet have init scripts included. You can find examples on the Samba Init-Script page.
+
+$ Run "smbclient", to check if Samba provides the AD DC default shares "netlogon" and "sysvol", that were created in your "smb.conf" during provisioning/upgrading:
+
+----------------------------------------------------------------------------
+
+########## /usr/local/samba/bin/smbclient -L localhost -U%
+
+Domain=[SAMDOM] OS=[Unix] Server=[Samba 4.x.y]
+
+        Sharename       Type      Comment
+        ---------       ----      -------
+        netlogon        Disk      
+        sysvol          Disk      
+        IPC$            IPC       IPC Service (Samba 4.x.y)
+Domain=[SAMDOM] OS=[Unix] Server=[Samba 4.x.y]
+
+        Server               Comment
+        ---------            -------
+
+        Workgroup            Master
+        ---------            -------
+----------------------------------------------------------------------------
+
+$ To test that authentication is working, you should try to connect to the  netlogon  share, using the Domain Administrator account that was created during provisioning/upgrading:
+
+----------------------------------------------------------------------------
+
+# /usr/local/samba/bin/smbclient //localhost/netlogon -UAdministrator -c 'ls'
+
+Enter Administrator's password: Passw0rd
+Domain=[SAMDOM] OS=[Unix] Server=[Samba 4.x.y]
+ .                                   D        0  Sat Jul  5 08:40:00 2015
+ ..                                  D        0  Sat Jul  5 08:40:00 2015
+
+               49386 blocks of size 524288. 42093 blocks available
+
+----------------------------------------------------------------------------
+
+
+Configure DNS :
+
+# /etc/resolv.conf:
+
+domain samdom.example.com
+nameserver 10.99.0.1
+
+-------------------------------Testing DNS------------------------------------
+
+To test that DNS is working properly, run the following commands and compare the output to what is shown:
+
+##  host -t SRV _ldap._tcp.samdom.example.com.
+_ldap._tcp.samdom.example.com has SRV record 0 100 389 dc1.samdom.example.com.
+
+## host -t SRV _kerberos._udp.samdom.example.com.
+_kerberos._udp.samdom.example.com has SRV record 0 100 88 dc1.samdom.example.com.
+
+## host -t A dc1.samdom.example.com.
+dc1.samdom.example.com has address 10.99.0.1
+--------------------------------------------------------------------------------
+
+If you receive any errors, check your system logs to locate the problem.
+
+
+-----------------------------Testing Kerberos-------------------------------------
+
+$ Use "kinit" to obtain a Kerberos ticket:
+
+
+##  kinit administrator@SAMDOM.EXAMPLE.COM
+Password for administrator@SAMDOM.EXAMPLE.COM: Passw0rd
+
+$ Note: You must always specify your realm in uppercase letters!
+
+$ Depending on your distribution, "kinit" may just return you to a prompt when successful. To verify that Kerberos is working and that you had received a ticket, run:
+
+--------------------------------------------------------------------------------
+# klist
+Ticket cache: FILE:/tmp/krb5cc_0
+Default principal: administrator@SAMDOM.EXAMPLE.COM
+
+Valid starting       Expires              Service principal
+08.09.2015 14:27:45  09.09.2015 00:27:45  krbtgt/SAMDOM.EXAMPLE.COM@SAMDOM.EXAMPLE.COM
+	renew until 09.09.2015 14:27:42
+--------------------------------------------------------------------------------
+DNS updates
+
+14) Troubleshooting incase debugging dynamic DNS updates are not working
+[root@ad ~]# /usr/local/samba/sbin/samba_dnsupdate --verbose --all-names
+
+--------------------------IPTABLES RULES FOR SAMBA-------------------------------
+
+11) If iptables is enabled then the below ports need to allowed through firewall.
+[root@ad ~]# iptables -A INPUT -p udp -i eth0 -s 192.168.1.0/24 --dport 53 -j ACCEPT
+[root@ad ~]# iptables -A INPUT -p udp -i eth0 -s 192.168.1.0/24 --dport 123 -j ACCEPT
+[root@ad ~]# iptables -A INPUT -p udp -i eth0 -s 192.168.1.0/24 --dport 135 -j ACCEPT
+[root@ad ~]# iptables -A INPUT -p udp -i eth0 -s 192.168.1.0/24 --dport 138 -j ACCEPT
+[root@ad ~]# iptables -A INPUT -p udp -i eth0 -s 192.168.1.0/24 --dport 389 -j ACCEPT
+[root@ad ~]# iptables -A INPUT -p tcp -i eth0 -s 192.168.1.0/24 --dport 88 -j ACCEPT
+[root@ad ~]# iptables -A INPUT -p tcp -i eth0 -s 192.168.1.0/24 --dport 139 -j ACCEPT
+[root@ad ~]# iptables -A INPUT -p tcp -i eth0 -s 192.168.1.0/24 --dport 389 -j ACCEPT
+[root@ad ~]# iptables -A INPUT -p tcp -i eth0 -s 192.168.1.0/24 --dport 445 -j ACCEPT
+[root@ad ~]# iptables -A INPUT -p tcp -i eth0 -s 192.168.1.0/24 --dport 464 -j ACCEPT
+[root@ad ~]# iptables -A INPUT -p tcp -i eth0 -s 192.168.1.0/24 --dport 636 -j ACCEPT
+[root@ad ~]# iptables -A INPUT -p tcp -i eth0 -s 192.168.1.0/24 --dport 1024:1032 -j ACCEPT
+[root@ad ~]# iptables -A INPUT -p tcp -i eth0 -s 192.168.1.0/24 --dport 3268 -j ACCEPT
+[root@ad ~]# iptables -A INPUT -p udp -i eth0 -s 192.168.1.0/24 --dport 3269 -j ACCEPT
+

@@ -1,0 +1,66 @@
+[2015/06/27 10:05:51.499043,  0] ../source3/winbindd/winbindd_cache.c:3245(initialize_winbindd_cache)
+  initialize_winbindd_cache: clearing cache and re-creating with version number 2
+[2015/06/27 10:05:51.801952,  0] ../lib/util/become_daemon.c:124(daemon_ready)
+  STATUS=daemon 'winbindd' finished starting up and ready to serve connections
+[2015/06/27 10:50:10.300220,  0] ../source3/winbindd/winbindd_cache.c:3245(initialize_winbindd_cache)
+  initialize_winbindd_cache: clearing cache and re-creating with version number 2
+[2015/06/27 10:50:10.694581,  0] ../lib/util/become_daemon.c:124(daemon_ready)
+  STATUS=daemon 'winbindd' finished starting up and ready to serve connections
+[2015/06/27 12:31:58.308131,  0] ../source3/winbindd/winbindd_cache.c:3245(initialize_winbindd_cache)
+  initialize_winbindd_cache: clearing cache and re-creating with version number 2
+[2015/06/27 12:31:58.643511,  0] ../lib/util/become_daemon.c:124(daemon_ready)
+  STATUS=daemon 'winbindd' finished starting up and ready to serve connections
+[2015/06/27 14:40:45.703420,  0] ../source3/winbindd/winbindd_cache.c:3245(initialize_winbindd_cache)
+  initialize_winbindd_cache: clearing cache and re-creating with version number 2
+[2015/06/27 14:40:46.044257,  0] ../lib/util/become_daemon.c:124(daemon_ready)
+  STATUS=daemon 'winbindd' finished starting up and ready to serve connections
+[2015/06/29 12:15:17.700233,  0] ../source3/winbindd/winbindd_cache.c:3245(initialize_winbindd_cache)
+  initialize_winbindd_cache: clearing cache and re-creating with version number 2
+[2015/06/29 12:15:18.078179,  0] ../lib/util/become_daemon.c:124(daemon_ready)
+  STATUS=daemon 'winbindd' finished starting up and ready to serve connections
+[2015/06/30 15:15:14.811651,  0] ../source3/winbindd/winbindd_cache.c:3245(initialize_winbindd_cache)
+  initialize_winbindd_cache: clearing cache and re-creating with version number 2
+[2015/06/30 15:15:15.095884,  0] ../lib/util/become_daemon.c:124(daemon_ready)
+  STATUS=daemon 'winbindd' finished starting up and ready to serve connections
+[2015/06/30 16:51:27.445382,  0] ../source3/winbindd/winbindd.c:266(winbindd_sig_term_handler)
+  Got sig[15] terminate (is_parent=1)
+[2015/06/30 16:55:00.235357,  0] ../source3/winbindd/winbindd_cache.c:3245(initialize_winbindd_cache)
+  initialize_winbindd_cache: clearing cache and re-creating with version number 2
+[2015/06/30 16:55:00.531302,  0] ../lib/util/become_daemon.c:124(daemon_ready)
+  STATUS=daemon 'winbindd' finished starting up and ready to serve connections
+[2015/07/10 09:18:37.210826,  0] ../source3/winbindd/winbindd_cache.c:3245(initialize_winbindd_cache)
+  initialize_winbindd_cache: clearing cache and re-creating with version number 2
+[2015/07/10 09:18:37.615711,  0] ../lib/util/become_daemon.c:124(daemon_ready)
+  STATUS=daemon 'winbindd' finished starting up and ready to serve connections
+[2015/07/15 15:28:28.531262,  0] ../source3/winbindd/winbindd.c:266(winbindd_sig_term_handler)
+  Got sig[15] terminate (is_parent=1)
+[2015/07/15 15:32:16.338169,  0] ../source3/winbindd/winbindd_cache.c:3245(initialize_winbindd_cache)
+  initialize_winbindd_cache: clearing cache and re-creating with version number 2
+[2015/07/15 15:32:16.650911,  0] ../lib/util/become_daemon.c:124(daemon_ready)
+  STATUS=daemon 'winbindd' finished starting up and ready to serve connections
+[2015/08/08 14:36:28.751159,  0] ../source3/winbindd/winbindd.c:266(winbindd_sig_term_handler)
+  Got sig[15] terminate (is_parent=1)
+[2015/08/10 09:25:59.114167,  0] ../source3/winbindd/winbindd_cache.c:3245(initialize_winbindd_cache)
+  initialize_winbindd_cache: clearing cache and re-creating with version number 2
+[2015/08/10 09:25:59.498700,  0] ../lib/util/become_daemon.c:124(daemon_ready)
+  STATUS=daemon 'winbindd' finished starting up and ready to serve connections
+[2015/10/14 16:22:33.092187,  0] ../source3/winbindd/winbindd.c:266(winbindd_sig_term_handler)
+  Got sig[15] terminate (is_parent=1)
+[2015/10/14 16:49:52.035140,  0] ../source3/winbindd/winbindd_cache.c:3245(initialize_winbindd_cache)
+  initialize_winbindd_cache: clearing cache and re-creating with version number 2
+[2015/10/14 16:49:52.416735,  0] ../lib/util/become_daemon.c:124(daemon_ready)
+  STATUS=daemon 'winbindd' finished starting up and ready to serve connections
+[2015/10/15 09:09:21.885790,  0] ../source3/winbindd/winbindd_cache.c:3245(initialize_winbindd_cache)
+  initialize_winbindd_cache: clearing cache and re-creating with version number 2
+[2015/10/15 09:09:22.294822,  0] ../lib/util/become_daemon.c:124(daemon_ready)
+  STATUS=daemon 'winbindd' finished starting up and ready to serve connections
+[2015/10/19 09:39:54.997268,  0] ../source3/winbindd/winbindd_cache.c:3245(initialize_winbindd_cache)
+  initialize_winbindd_cache: clearing cache and re-creating with version number 2
+[2015/10/19 09:39:55.516724,  0] ../lib/util/become_daemon.c:124(daemon_ready)
+  STATUS=daemon 'winbindd' finished starting up and ready to serve connections
+[2015/12/18 08:05:15.681363,  0] ../source3/winbindd/winbindd.c:266(winbindd_sig_term_handler)
+  Got sig[15] terminate (is_parent=1)
+[2015/12/18 08:18:49.080416,  0] ../source3/winbindd/winbindd_cache.c:3245(initialize_winbindd_cache)
+  initialize_winbindd_cache: clearing cache and re-creating with version number 2
+[2015/12/18 08:18:49.513983,  0] ../lib/util/become_daemon.c:124(daemon_ready)
+  STATUS=daemon 'winbindd' finished starting up and ready to serve connections

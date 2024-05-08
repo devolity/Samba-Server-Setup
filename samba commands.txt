@@ -1,0 +1,23 @@
+=================================================================
+
+# /usr/local/samba/bin/samba-tool user add rocky <-- Vsdfsd@2016
+
+# /usr/local/samba/bin/samba-tool user list
+
+# /usr/local/samba/bin/samba-tool user add test1 --uid-number=1000 --gid-number=100 --login-shell=/bin/bash --uid=test1\
+
+# /usr/local/samba/bin/samba-tool user setexpiry test1 -k yes --noexpiry
+
+# /usr/local/samba/bin/samba-tool user delete test1 
+
+# /usr/local/samba/bin/smbclient //10.11.12.54/netlogon -Urocky -c 'ls'
+
+
+===================== ON CLIENT SIDE ===================
+
+# net use x: \\server\demo <-- on windows PC
+
+
+pdc.devolity.in
+devolity@#raw0974
+

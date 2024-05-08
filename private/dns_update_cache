@@ -1,0 +1,27 @@
+A pdc.gdgpsd.in 10.11.12.2
+A gdgpsd.in 10.11.12.2
+SRV _ldap._tcp.gdgpsd.in pdc.gdgpsd.in 389
+SRV _ldap._tcp.dc._msdcs.gdgpsd.in pdc.gdgpsd.in 389
+SRV _ldap._tcp.c4697e68-4c1c-4843-8a3c-d834cfb17c75.domains._msdcs.gdgpsd.in pdc.gdgpsd.in 389
+SRV _kerberos._tcp.gdgpsd.in pdc.gdgpsd.in 88
+SRV _kerberos._udp.gdgpsd.in pdc.gdgpsd.in 88
+SRV _kerberos._tcp.dc._msdcs.gdgpsd.in pdc.gdgpsd.in 88
+SRV _kpasswd._tcp.gdgpsd.in pdc.gdgpsd.in 464
+SRV _kpasswd._udp.gdgpsd.in pdc.gdgpsd.in 464
+CNAME 18cf3fc1-5cb7-4189-8553-29c95a856b30._msdcs.gdgpsd.in pdc.gdgpsd.in
+SRV _ldap._tcp.Default-First-Site-Name._sites.gdgpsd.in pdc.gdgpsd.in 389
+SRV _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.gdgpsd.in pdc.gdgpsd.in 389
+SRV _kerberos._tcp.Default-First-Site-Name._sites.gdgpsd.in pdc.gdgpsd.in 88
+SRV _kerberos._tcp.Default-First-Site-Name._sites.dc._msdcs.gdgpsd.in pdc.gdgpsd.in 88
+SRV _ldap._tcp.pdc._msdcs.gdgpsd.in pdc.gdgpsd.in 389
+A gc._msdcs.gdgpsd.in 10.11.12.2
+SRV _gc._tcp.gdgpsd.in pdc.gdgpsd.in 3268
+SRV _ldap._tcp.gc._msdcs.gdgpsd.in pdc.gdgpsd.in 3268
+SRV _gc._tcp.Default-First-Site-Name._sites.gdgpsd.in pdc.gdgpsd.in 3268
+SRV _ldap._tcp.Default-First-Site-Name._sites.gc._msdcs.gdgpsd.in pdc.gdgpsd.in 3268
+A DomainDnsZones.gdgpsd.in 10.11.12.2
+SRV _ldap._tcp.DomainDnsZones.gdgpsd.in pdc.gdgpsd.in 389
+SRV _ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.gdgpsd.in pdc.gdgpsd.in 389
+A ForestDnsZones.gdgpsd.in 10.11.12.2
+SRV _ldap._tcp.ForestDnsZones.gdgpsd.in pdc.gdgpsd.in 389
+SRV _ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.gdgpsd.in pdc.gdgpsd.in 389

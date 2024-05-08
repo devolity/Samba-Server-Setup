@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Drives clsid="{8FDDCC1A-0C3C-43cd-A6B4-71A6DF20DA8C}"><Drive clsid="{935D1B74-9CB8-4e3c-9914-7DD559B7A417}" name="H:" status="H:" image="0" changed="2015-07-10 09:34:07" uid="{CCBD27DA-3234-4D82-BAA4-D0EEB9137F83}" bypassErrors="1"><Properties action="C" thisDrive="SHOW" allDrives="NOCHANGE" userName="" path="\\pdc\it" label="" persistent="1" useLetter="0" letter="H"/><Filters><FilterOrgUnit bool="AND" not="0" name="" userContext="1" directMember="1"/></Filters></Drive>
+	<Drive clsid="{935D1B74-9CB8-4e3c-9914-7DD559B7A417}" name="O:" status="O:" image="0" changed="2015-07-10 09:33:18" uid="{CA5655D4-715B-46C0-BD1A-9003FB8434FF}"><Properties action="C" thisDrive="SHOW" allDrives="NOCHANGE" userName="" path="\\pdc\universal_share" label="" persistent="1" useLetter="0" letter="O"/></Drive>
+	<Drive clsid="{935D1B74-9CB8-4e3c-9914-7DD559B7A417}" name="K:" status="K:" image="0" changed="2015-07-10 09:33:14" uid="{5B003938-9B26-446F-853B-5AA394EC98D2}"><Properties action="C" thisDrive="SHOW" allDrives="NOCHANGE" userName="" path="\\pdc\Rhymes_And_Movies" label="" persistent="1" useLetter="0" letter="K"/></Drive>
+</Drives>

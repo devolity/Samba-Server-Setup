@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Drives clsid="{8FDDCC1A-0C3C-43cd-A6B4-71A6DF20DA8C}"><Drive clsid="{935D1B74-9CB8-4e3c-9914-7DD559B7A417}" name="H:" status="H:" image="2" changed="2015-09-11 08:34:34" uid="{28A337B6-49B5-4509-950E-3CA28275881E}" bypassErrors="1"><Properties action="U" thisDrive="SHOW" allDrives="NOCHANGE" userName="" path="\\pdc\it" label="" persistent="1" useLetter="1" letter="H"/><Filters><FilterOrgUnit bool="AND" not="0" name="" userContext="1" directMember="0"/></Filters></Drive>
+</Drives>

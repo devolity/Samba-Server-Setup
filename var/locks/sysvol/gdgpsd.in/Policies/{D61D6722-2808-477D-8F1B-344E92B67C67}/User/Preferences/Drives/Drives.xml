@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Drives clsid="{8FDDCC1A-0C3C-43cd-A6B4-71A6DF20DA8C}"><Drive clsid="{935D1B74-9CB8-4e3c-9914-7DD559B7A417}" name="H:" status="H:" image="0" changed="2015-07-10 09:29:17" uid="{4B5D746C-C58D-47D8-8AA5-464C935808C8}"><Properties action="C" thisDrive="SHOW" allDrives="NOCHANGE" userName="" path="\\pdc\accounting" label="" persistent="1" useLetter="1" letter="H"/></Drive>
+</Drives>

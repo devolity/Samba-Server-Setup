@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Drives clsid="{8FDDCC1A-0C3C-43cd-A6B4-71A6DF20DA8C}"><Drive clsid="{935D1B74-9CB8-4e3c-9914-7DD559B7A417}" name="H:" status="H:" image="0" changed="2015-07-01 05:37:33" uid="{C6496E62-41BE-4B8B-BE83-7E1C6FCA229B}"><Properties action="C" thisDrive="NOCHANGE" allDrives="NOCHANGE" userName="" path="\\pdc\preprim" label="" persistent="1" useLetter="1" letter="H"/></Drive>
+	<Drive clsid="{935D1B74-9CB8-4e3c-9914-7DD559B7A417}" name="I:" status="I:" image="0" changed="2015-07-01 05:37:54" uid="{B33E4027-BBCA-41BD-840E-49615AC3B0AF}"><Properties action="C" thisDrive="NOCHANGE" allDrives="NOCHANGE" userName="" path="\\pdc\universal_share" label="" persistent="1" useLetter="1" letter="I"/></Drive>
+	<Drive clsid="{935D1B74-9CB8-4e3c-9914-7DD559B7A417}" name="K:" status="K:" image="0" changed="2015-07-01 05:40:10" uid="{61AB745B-3866-4772-8CA7-AEEA1D72BF8D}"><Properties action="C" thisDrive="NOCHANGE" allDrives="NOCHANGE" userName="" path="\\pdc\Rhymes_And_Movies" label="" persistent="1" useLetter="1" letter="K"/></Drive>
+</Drives>
